@@ -255,7 +255,7 @@ An detailed app history is created by logging events to the sys.log file. All us
 ---
 
 
-Github: github.com/
+Github: github.com
 Author: James H. Pilcher (2021)
 Email: Pilcherjames0@gmail.com
 License: MIT License
