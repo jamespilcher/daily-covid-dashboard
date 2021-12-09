@@ -13,10 +13,10 @@
     - [How do updates work?](#how-do-updates-work)
     - [Updating the template](#updating-the-template)
 - [Modules + Function Documentation](#modules)
-    - [covid_data_handler.py](#covid_data_handler.py)
-    - [covid_news_handling.py](#covid_news_handling.py)
-    - [interface.py](#interface.py)
-    - [loadconfig.py](#loadconfig.py)
+    - [covid_data_handler.py](#covid_data_handler)
+    - [covid_news_handling.py](#covid_news_handling)
+    - [interface.py](#interface)
+    - [loadconfig.py](#loadconfig)
     - [Testing Modules](#testing-modules)
 - [Logging Info](#logging-info)
 - [Possible Improvements](#possible-improvements)
@@ -175,13 +175,13 @@ Updating: Covid Data, The News, Repeating At Time: 09:58
 ---
 ### Modules:
 
-- [covid_data_handler.py](#covid_data_handler(.py))
-- [covid_news_handling.py](#covid_news_handling(.py))
-- [interface.py](#interface(.py))
-- [loadconfig.py](#loadconfig(.py))
+- [covid_data_handler.py](#covid_data_handler)
+- [covid_news_handling.py](#covid_news_handling)
+- [interface.py](#interface)
+- [loadconfig.py](#loadconfig)
 - [Testing Modules](#testing-modules)
 
-### covid_data_handler.py
+### covid_data_handler
 ---
 This module handles, passes, and processes covid data from both file and the UK Covid API.
 ##### index_of_first_non_empty_csv(list_of_lists: list, column_index: int) -> int:
@@ -203,7 +203,7 @@ This module handles, passes, and processes covid data from both file and the UK 
 ##### schedule_covid_updates(update_interval: int, update_name: str) -> Event:
 -   Schedules the covid_data_updater function to execute in a given time interval, and returns the scheduled event.
 
-### covid_news_handling.py
+### covid_news_handling
 ---
 Handles and processes data returned from News API.
 ##### news_API_request(covid_terms="Covid COVID-19 coronavirus") -> dict:
@@ -215,7 +215,7 @@ Handles and processes data returned from News API.
 ##### schedule_news_updates(update_interval: int, update_name: str) -> Event:
 -   Schedules the update_news function to execute in a given time interval, and returns the scheduled event.
 
-### interface.py
+### interface
 ---
 The interface between the back-end to the front end.
 ##### widget_remover(update_name: str) -> None:
@@ -232,7 +232,7 @@ The interface between the back-end to the front end.
 ##### checkboxes():
 -   Any time there is user input, this function is called to handle it.
 
-### loadconfig.py
+### loadconfig
 ---
 Loads the config.json file and store values into variables, which can then be imported into the necessary modules
 
