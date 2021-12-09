@@ -13,12 +13,13 @@
     - [How do updates work?](#how-do-updates-work)
     - [Updating the template](#updating-the-template)
 - [Modules + Function Documentation](#modules)
-    - [covid_data_handler.py](#covid_data_handler)
+    - [covid_data_handler.py](#covid_data_handler(.py))
     - [covid_news_handling.py](#covid_news_handling)
     - [interface.py](#interface)
     - [loadconfig.py](#loadconfig)
     - [Testing Modules](#testing-modules)
 - [Logging Info](#logging-info)
+- [Possible Improvements](#possible-improvements)
 - [Info and License](#info-and-license)
 ## Introduction:
 ---
