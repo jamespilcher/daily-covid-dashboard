@@ -183,7 +183,7 @@ Updating: Covid Data, The News, Repeating At Time: 09:58
 
 ### covid_data_handler
 ---
-This module handles, passes, and processes covid data from both file and the UK Covid API.
+covid_data_handler.py handles, passes, and processes covid data from both file and the UK Covid API.
 ##### index_of_first_non_empty_csv(list_of_lists: list, column_index: int) -> int:
 -   Returns the index of the 'starting row' - the row with the latest data for the given column.
 ##### parse_csv_data(csv_filename: str) -> list[str]:
@@ -205,7 +205,7 @@ This module handles, passes, and processes covid data from both file and the UK 
 
 ### covid_news_handling
 ---
-Handles and processes data returned from News API.
+covid_news_handling.py handles and processes data returned from News API.
 ##### news_API_request(covid_terms="Covid COVID-19 coronavirus") -> dict:
 -   Returns a dictionary of news data from the API. Data is from the past 7 days, sorted by newest, and from configurable sources. This data is as a dictionary, where the key 'articles' contains a list of dictionaries for each article.
 ##### duplicate_article_remover(list_of_dictionaries: list[dict]) -> list[dict]:
@@ -217,7 +217,7 @@ Handles and processes data returned from News API.
 
 ### interface
 ---
-The interface between the back-end to the front end.
+interface.py is interface between the back-end to the front end.
 ##### widget_remover(update_name: str) -> None:
 -   This removes toasts from the update queue GUI.
 ##### random_words() -> str:
@@ -234,7 +234,7 @@ The interface between the back-end to the front end.
 
 ### loadconfig
 ---
-Loads the config.json file and store values into variables, which can then be imported into the necessary modules
+loadconfig.py loads the config.json file and store values into variables, which can then be imported into the necessary modules
 
 ### Testing modules:
 ---
