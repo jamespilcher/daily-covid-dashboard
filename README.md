@@ -4,20 +4,6 @@
 ## Contents:
 ---
 
-\begin{table}[]
-\begin{tabular}{lllll}
-- [Introduction](#introduction)                                  & - [Modules + Function Documentation](#modules)    &  &  &  \\
-- [Prerequisites](#prerequisites)                                & - [covid_data_handler.py](#covid_data_handler)    &  &  &  \\
-- [Altering Config File](#altering-the-config-file)              & - [covid_news_handling.py](#covid_news_handling)  &  &  &  \\
-- [Running The Program](#running-the-program)                    & - [interface.py](#interface)                      &  &  &  \\
-- [So How Does The Program Work?](#so-how-does-the-program-work) & - [loadconfig.py](#loadconfig)                    &  &  &  \\
-- [On server launch](#on-server-launch)                          & - [Testing Modules](#testing-modules)             &  &  &  \\
-- [On user input](#on-user-input)                                & - [Logging Info](#logging-info)                   &  &  &  \\
-- [How do updates work?](#how-do-updates-work)                   & - [Possible Improvements](#possible-improvements) &  &  &  \\
-- [Updating the template](#updating-the-template)                & - [Info and License](#info-and-license)           &  &  & 
-\end{tabular}
-\end{table}
-
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Altering Config File](#altering-the-config-file)
