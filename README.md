@@ -257,5 +257,5 @@ An detailed app history is created by logging events to the sys.log file. All us
 
 - Github: https://github.com/jamespilcher/daily-covid-dashboard
 - Author: James Pilcher (2021)
-- Email: Pilcherjames0@gmail.com
+- Email: pilcherjames0@gmail.com
 - License: MIT License
