@@ -46,6 +46,7 @@ External Libraries Used:
 -   PLACE NEWS API KEY IN CONFIG FILE.
 -   Open interface.py in idle and run from there,
 -   The server will start and your browser will automatically navigate to the right url.
+-   To end the server press ctrl+c
 ## Config File:
 ---
 In config.json (you can open with notepad):
