@@ -44,7 +44,7 @@ External Libraries Used:
 ## How To Run The Program:
 ---
 -   PLACE NEWS API KEY IN CONFIG FILE.
--   Open and run the interface(.py) file. 
+-   Open interface.py in idle and run from there,
 -   The server will start and your browser will automatically navigate to the right url.
 ## Config File:
 ---
