@@ -5,6 +5,6 @@
     "local_host_url" : "http://127.0.0.1:5000/",
 
     "covid_terms" : "Covid COVID-19 coronavirus",
-    "newsAPI_key" : "abdef68463274fca94da6d23925ad2d6",
+    "newsAPI_key" : "<INSERT HERE>",
     "news_outlet_websites" : "bbc.co.uk, theguadian.com, dailymail.co.uk, express.co.uk, independent.co.uk, nytimes.com, telegraph.co.uk, wsj.com, washingtonpost.com, mirror.co.uk, thetimes.co.uk, thesun.co.uk, ft.com, itv.co.uk"
 }
