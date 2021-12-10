@@ -33,10 +33,6 @@ External Libraries Used:
     ```html
     pip install uk-covid19
     ```
-- newsapi:    https://newsapi.org/docs/client-libraries/python 
-    ```html
-    pip install news api
-    ```
 - schedule:   https://pypi.org/project/schedule/
     ```html
     pip install schedule
