@@ -61,7 +61,7 @@ def time_until_activate(hour_min: str) -> int:
     current_mins = gmtime().tm_min
     current_secs = gmtime().tm_sec
     secs_after_midnight = current_hours * 60 * 60 + \
-        current_mins * 60 + current_secs  # YES PLEASe
+        current_mins * 60 + current_secs
     hours, mins = hour_min.split(':')
     target_time_in_secs = int(hours) * 60 * 60 + int(mins) * 60
     activate_time = target_time_in_secs - secs_after_midnight
@@ -89,11 +89,12 @@ def home():
                            nation_location=country,
                            local_7day_infections=covid_data['local_7day_cases'],
                            national_7day_infections=covid_data['national_7day_cases'],
+
                            hospital_cases="Hospital Cases: " +
                            str(covid_data['hospital_cases']),
+
                            deaths_total="Total Deaths: " +
                            str(covid_data['deaths_total']),
-
                            news_articles=list_news[:5],
                            updates=update_queue)
 
@@ -150,7 +151,6 @@ def checkboxes():
                             logging.info(
                                 "[%s] Cancelled: Scheduled News Update",
                                 update_title)
-                        # cancels the event that was going to remove from the GUI on completion
                         schedule_widget_remover.cancel(
                             ele['scheduled_close_toast'])
                         logging.info(
