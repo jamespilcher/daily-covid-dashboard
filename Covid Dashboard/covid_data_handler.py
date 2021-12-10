@@ -47,7 +47,7 @@ def process_covid_csv_data(covid_csv_data: list[str]) -> int:
     column_for_hospital = headers.index("hospitalCases")
     column_for_deaths = headers.index("cumDailyNsoDeathsByDeathDate")
     starting_row_for_cases_week = index_of_first_non_empty_csv(
-        list_of_lists, column_for_cases)
+        list_of_lists, column_for_cases) + 1
     last_weeks_data = list_of_lists[starting_row_for_cases_week: (
         starting_row_for_cases_week + 7)]
 
