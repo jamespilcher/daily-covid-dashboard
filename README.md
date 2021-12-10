@@ -52,7 +52,7 @@ External Libraries Used:
 -   The server will start and your browser will automatically navigate to the right url.
 ## Config File:
 ---
-In config.json:
+In config.json (you can open with notepad):
 ##### "location_type" can be:
 -   "ltla" - Lower Tier Local Authority
 -    "utla" - Upper Tier Local Authority
