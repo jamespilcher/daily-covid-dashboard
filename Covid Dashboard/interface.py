@@ -14,7 +14,7 @@ import schedule
 from flask import Flask, render_template, request, redirect, url_for
 
 from loadconfig import webpage_url, config_location, country
-from covid_data_handler import parse_csv_data, covid_data_updater
+from covid_data_handler import covid_data_updater
 from covid_data_handler import schedule_covid_updates, cov_scheduler
 from covid_news_handling import removed_titles, update_news, news_scheduler, schedule_news_updates
 
@@ -43,8 +43,10 @@ def widget_remover(update_name: str) -> None:
 
 def random_words() -> str:
     """Returns a unique random adjective + noun combonation in title case"""
-    nouns = parse_csv_data("words/nouns.txt")  # (Isn't CSV data)
-    adjectives = parse_csv_data("words/adjectives.txt")
+    with open('words/nouns.txt', encoding='utf-8') as file:
+        nouns = file.read().splitlines()
+    with open('words/adjectives.txt', encoding='utf-8') as file:
+        adjectives = file.read().splitlines()
     words = choice(adjectives) + " " + choice(nouns)
     while words in used_random_words_combinations:
         words = choice(adjectives) + " " + choice(nouns)
