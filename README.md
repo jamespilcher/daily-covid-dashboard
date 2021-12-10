@@ -6,8 +6,8 @@
 
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
-- [Altering Config File](#altering-the-config-file)
-- [Running The Program](#running-the-program)
+- [How To Run The Program](#how-to-run-the-program)
+- [Config File](#config-file)
 - [So How Does The Program Work?](#so-how-does-the-program-work)
     - [On server launch](#on-server-launch)
     - [On user input](#on-user-input)
@@ -45,11 +45,12 @@ External Libraries Used:
     ```html
     pip install flask
     ```
-## Running The Program:
+## How To Run The Program:
 ---
+-   PLACE NEWS API KEY IN CONFIG FILE.
 -   Open and run the interface(.py) file. 
 -   The server will start and your browser will automatically navigate to the right url.
-## Altering The Config File:
+## Config File:
 ---
 In config.json:
 ##### "location_type" can be:
