@@ -189,15 +189,15 @@ covid_data_handler.py handles, passes, and processes covid data from both file a
 -   Returns a list of strings representing each row in a given file.
 ##### process_covid_csv_data(covid_csv_data: list[str]) -> int:
 -   Takes a csv data as a list of strings (representing each row as a string), returns number of cases in the past week, latest hospital cases, latest total deaths.
-##### covid_API_request(location="Exeter", location_type="ltla") -> dict:
+##### covid_API_request(location: str="Exeter", location_type: str="ltla") -> dict:
 -   Returns a dictionary of up to date covid data directly from the API.
 ##### first_non_empty(lst: list[dict], key: str) -> int:
 -   Returns the first non-empty value for a given key in an element from a list of dictionaries.
 ##### first_non_empty_index_finder(lst: list[dict], key: str) -> int:
 -   Returns the index of the first non-empty value for a given key in an element from a list of dictionaries.
-##### cases_last_7_days(cov_data: dict, key="newCasesByPublishDate") -> int:
+##### cases_last_7_days(cov_data: dict, key: str="newCasesByPublishDate") -> int:
 -   Returns the number of cases in the past 7 days, for the covid API.
-##### covid_data_updater(update_name="test") -> None:
+##### covid_data_updater(update_name: str="test") -> None:
 -   Processes relevant data received from API, then saves it into a json file.
 ##### schedule_covid_updates(update_interval: int, update_name: str) -> Event:
 -   Schedules the covid_data_updater function to execute in a given time interval, and returns the scheduled event.
@@ -205,11 +205,11 @@ covid_data_handler.py handles, passes, and processes covid data from both file a
 ### covid_news_handling
 ---
 covid_news_handling.py handles and processes data returned from News API.
-##### news_API_request(covid_terms="Covid COVID-19 coronavirus") -> dict:
+##### news_API_request(covid_terms: str="Covid COVID-19 coronavirus") -> dict:
 -   Returns a dictionary of news data from the API. Data is from the past 7 days, sorted by newest, and from configurable sources. This data is as a dictionary, where the key 'articles' contains a list of dictionaries for each article.
 ##### duplicate_article_remover(list_of_dictionaries: list[dict]) -> list[dict]:
 -   Returns a list of dictionaries that don't have duplicate values for the key 'title'. Essentially cleans up messy data.
-##### update_news(seen_titles: list[str], update_name="test") -> None:
+##### update_news(seen_titles: list[str], update_name: str="test") -> None:
 -   Updates the list_of_news.json file
 ##### schedule_news_updates(update_interval: int, update_name: str) -> Event:
 -   Schedules the update_news function to execute in a given time interval, and returns the scheduled event.
